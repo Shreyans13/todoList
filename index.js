@@ -30,7 +30,7 @@ let showTodos = ()=>{
         else {
             list.innerHTML+=`
                 <div class="task">
-                    <input type="checkbox" class="checkBox" onclick="checkIt(${i})">
+                    <input type="checkbox" class="checkBox" onclick="checkIt(${i})" checked>
                     <div class="taskText strikeout" >
                         ${ele.title}
                     </div>
@@ -82,6 +82,7 @@ let checkIt = (index) =>{
     // console.log(index)
     todoList[index].status = !todoList[index].status
     showTodos()
+
 }
 
 
