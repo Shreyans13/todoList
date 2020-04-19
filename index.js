@@ -91,14 +91,3 @@ document.getElementById("newTodo").addEventListener("keydown", e => {
         addNew();
     }
 });
-
-// ----------------------------Random color added bonus material------------------------
-let randomColor = () => {
-    // var colorletters = 'ABCDEF0123456789';
-    // var color = '#';
-    // for (var i = 0; i < 6; i++) {
-    //     color += colorletters[Math.floor(Math.random() * 16)];
-    // }\
-    
-    document.querySelector('body').style.background = '#'+['3fe0d0','7ef9ff','588bae','4682b4','73c2fb','6593f5','008ecc','of52ba','0080ff','1034a6','0e4d92','000080','111e6c'][Math.floor(Math.random() * 13)]
-}
